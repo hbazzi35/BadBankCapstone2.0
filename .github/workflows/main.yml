@@ -3,7 +3,7 @@ on:
   push:
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macOS-latest
     strategy:
       matrix:
         node-version: [12.x]
@@ -20,7 +20,7 @@ jobs:
           CI: true
   deploy:
     needs: build 
-    runs-on: ubuntu-latest 
+    runs-on: macOS-latest 
     steps:
       - uses: actions/checkout@master
       - uses: jakejarvis/s3-sync-action@master
