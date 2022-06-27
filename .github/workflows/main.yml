@@ -29,5 +29,5 @@ jobs:
         env: 
           AWS_S3_BUCKET: ${{ secrets.hassan-bazzifullstackbankingapplication }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AKIAT5H3OPG7CVXU5454 }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.7FIe78n0c03/XBMVaDS }}
           AWS_REGION: "us-east-1" # optional: defaults to us-east-1
