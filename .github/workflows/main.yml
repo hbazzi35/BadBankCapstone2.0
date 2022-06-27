@@ -26,7 +26,7 @@ jobs:
       - uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-syminks --delete
-        env: 
+        secret env: 
           AWS_S3_BUCKET: ${{ secrets.hassan-bazzifullstackbankingapplication }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AKIAT5H3OPG7F2KBBH5P }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SH1ovfrJeG1CDYpRcAhqlCRWMIceTmpkBpqlEn7G }}
