@@ -3,7 +3,7 @@ on:
   push:
 jobs:
   build:
-    runs-on: macOS-latest
+    runs-on: mac-latest
     strategy:
       matrix:
         node-version: [12.x]
@@ -19,6 +19,8 @@ jobs:
         env:
           CI: true
   deploy:
+    needs: build 
+    runs-on: macOS-latest 
     - name: Upload
-  run: AWS_ACCESS_KEY_ID=${{secrets.S3_KEY}} AWS_SECRET_ACCESS_KEY=${{secrets.S3_SECRET_KEY}} aws s3 sync . s3://<bucket-name>/ --acl public-read --no-progress
+  run: AWS_ACCESS_KEY_ID=${{secrets.S3_KEY}} AWS_SECRET_ACCESS_KEY=${{secrets.S3_SECRET_KEY}} aws s3 sync . s3://<hassan-bazzifullstackbankingapplication>/ --acl public-read --no-progress
   working-directory: <directory-to-sync>
