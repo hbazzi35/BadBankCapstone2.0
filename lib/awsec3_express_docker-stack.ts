@@ -29,7 +29,7 @@ export class Awsec3ExpressDockerStack extends cdk.Stack {
     });
 
     helloContainer.addPortMappings({
-      containerPort: 3000,
+      containerPort: 4000,
     });
 
     const helloService = new ecs.Ec2Service(this, "hello-service", {
