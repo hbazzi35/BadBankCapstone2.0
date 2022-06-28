@@ -22,9 +22,11 @@ COPY public/userdata.js       /app/public/userdata.js
 
 # Image Files
 COPY /public/images/background.jpg        app/public/images/background.jpg
-COPY /public/images/badbank.jpeg        app/public/images/badbank.jpeg
-COPY /public/images/hbazztech.png        app/public/images/hbazztech.png
+COPY /public/images/badbank5.jpeg        app/public/images/badbank5.jpeg
+COPY /public/images/Hbazztech.png        app/public/images/Hbazztech.png
 
 # INSTALLING DEPENDENCIES
 RUN npm install firebase
 RUN npm install
+EXPOSE 4000
+ENTRYPOINT node index.js
