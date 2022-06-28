@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": " ",
     "build": "tsc",
     "watch": "tsc -w",
     "cdk": "cdk"
