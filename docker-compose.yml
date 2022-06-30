@@ -2,5 +2,5 @@ services:
   node:
     build: .
     ports: 
-      - "4000:4000"
+      - "27017:27017"
     command: node index.js
