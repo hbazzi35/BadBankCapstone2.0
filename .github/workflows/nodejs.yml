@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: udondan/cdk-nodejs@v0.3.1
         with:
-          fetch-depth: 1
+          node-version: ${{ matrix.node-version }}
       - name: Deploy
         uses: udondan/cdk-nodejs@v0.3.1
         with:
