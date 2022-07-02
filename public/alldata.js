@@ -24,7 +24,7 @@ function AllData(){
   return (
     Array.isArray(data) ? 
     <>
-    <h5>All Data in Store:</h5>
+    <h5>All Data i Store:</h5>
     <table>
       <tr style={styleTr}><th style={styleTd}>id</th><th style={styleTd}>name</th><th style={styleTd}>email</th><th style={styleTd}>password</th><th style={styleTd}>balance</th></tr>
       {data.map(d => {
