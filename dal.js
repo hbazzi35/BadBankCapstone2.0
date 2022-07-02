@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
-const url         = 'mongodb://localhost:27017';
+const url         = 'mongodb+srv://bazzih3519:Bazzi12345@badbank1.wdzpz.mongodb.net/?retryWrites=true&w=majority';
 let db            = null;
 
 // connect to mongo
@@ -7,7 +7,7 @@ MongoClient.connect(url, {useUnifiedTopology: true}, function(err, client) {
     console.log('Successfully connected to the DB server!');
 
     // connect to 'myproject' database
-    db = client.db('myproject');
+    db = client.db('BadBank1');
 });
 
 // create user account

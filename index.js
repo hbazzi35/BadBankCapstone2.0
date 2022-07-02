@@ -69,6 +69,9 @@ app.get('/acount/destroy/:email',function (req, res){
     })
 })
 
-var port = 4000;
-app.listen(port);
-console.log(`Running on port: ${port}`);
+const PORT = process.env.PORT || 4000
+
+app.listen(PORT, () => {
+
+    console.log("Server running...");
+});
