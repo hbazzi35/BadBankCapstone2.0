@@ -8,8 +8,13 @@ jobs:
       matrix:
         node-version: [12.x]
     steps:
+<<<<<<< HEAD
       - name: Checkout code
         uses: actions/checkout@v2
+=======
+      - uses: actions/checkout@master
+      - uses: udondan/cdk-nodejs@v0.3.1
+>>>>>>> parent of 1556300 (Update nodejs.yml)
         with:
           fetch-depth: 1
       - name: Deploy
