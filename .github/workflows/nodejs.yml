@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: udondan/cdk-nodejs@v0.3.1
         with:
-          node-version: ${{ matrix.node-version }}
+          args: --acl public-read --follow-symlinks --delete --exclude '.git/*' --exclude 'node_modules/*'
       - name: Deploy
         uses: udondan/cdk-nodejs@v0.3.1
         with:
